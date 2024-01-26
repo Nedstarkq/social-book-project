@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo2.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/WhatsApp Image 2023-12-01 at 12.49.41_65a09576.jpg">
+            </div>
+
+        </div>
+        <!--------------------------settings-menu------------------------------------------>
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/WhatsApp Image 2023-12-01 at 12.49.41_65a09576.jpg">
+                    <div>
+                        <p>Koko Ette</p>
+                       <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                       <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!-------------------------left-sidebar---------------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png"> Home</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Groups</a>
+                <a href="#"><img src="images/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png"> Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png"> Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png"> Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png"> Mobile app Development</a>
+            </div>
+        </div>
+        <!-------------------------main-content---------------------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Create Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Sheryl</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Holston</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Ashley</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/WhatsApp Image 2023-12-01 at 12.49.41_65a09576.jpg">
+                    <div>
+                        <p>Koko Ette</p>
+                        <small> Public</small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your Mind?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Live Video</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Mood/Activity</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/WhatsApp Image 2023-12-01 at 12.49.41_65a09576.jpg">
+                    <div>
+                        <p>Koko Ette</p>
+                        <span>Jan 22 2024, 9:31 pm</span>
+                    </div>
+                </div>
+                <p class="post-text">The Best way to get better at <span>coding</span> is by practising. Follow me to to know more about web development and UI designs. <a href="#">#webdeveloper</a> <a href="#">#buildinginPublic</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 60</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/WhatsApp Image 2023-12-01 at 12.49.41_65a09576.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+            <!---------------------------post-container-2----------------------------------->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/member-2.png">
+                    <div>
+                        <p>Holston Becker</p>
+                        <span>Jan 22 2024, 9:31 pm</span>
+                    </div>
+                </div>
+                <p class="post-text"> hangout at <span>Barracuda beach</span> with friends. this wis fun. <a href="#">#beach</a> <a href="#">#beachhangout</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 267</div>
+                        <div><img src="images/comments.png"> 75</div>
+                        <div><img src="images/share.png"> 15</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png">
+                    </div>
+
+                </div>
+
+            </div>
+            <!---------------------------post-container-3----------------------------------->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/member-1.png">
+                    <div>
+                        <p>Sheryl Tom</p>
+                        <span>Jan 22 2024, 9:31 pm</span>
+                    </div>
+                </div>
+                <p class="post-text"> We are having our upcoming <span>Developer Event 2024</span> in the monastery event center. I will be speaking on the topic "personal branding". <a href="#">#webdeveloperevent</a> <a href="#">#Gdglagos24</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 65</div>
+                        <div><img src="images/comments.png"> 30</div>
+                        <div><img src="images/share.png"> 8</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-1.png">
+                    </div>
+
+                </div>
+
+            </div>
+            <!---------------------------post-container-4----------------------------------->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/member-3.png">
+                    <div>
+                        <p>Ashley Jean</p>
+                        <span>Jan 22 2024, 9:31 pm</span>
+                    </div>
+                </div>
+                <p class="post-text"> We are having our upcoming <span>Developer Event 2024</span> in the monastery event center. I will be speaking on the topic "personal branding". <a href="#">#webdeveloperevent</a> <a href="#">#Gdglagos24</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 154</div>
+                        <div><img src="images/comments.png"> 95</div>
+                        <div><img src="images/share.png"> 5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-3.png">
+                    </div>
+
+                </div>
+
+            </div>
+            <!---------------------------post-container-5----------------------------------->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/member-4.png">
+                    <div>
+                        <p>John Doe</p>
+                        <span>Jan 22 2024, 9:31 pm</span>
+                    </div>
+                </div>
+                <p class="post-text"> We are having our upcoming <span>Developer Event 2024</span> in the monastery event center. I will be speaking on the topic "personal branding". <a href="#">#webdeveloperevent</a> <a href="#">#Gdglagos24</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 485</div>
+                        <div><img src="images/comments.png"> 152</div>
+                        <div><img src="images/share.png"> 58</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-4.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!-------------------------right-sidebar---------------------------->
+        <div class="right-sidebar">
+        
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+        
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Developers Hangout</h4>
+                    <p>Landmark Towers VI</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Google developer Event</h4>
+                    <p>Monarchy VI</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Ads</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Messages</h4>
+                <a href="#">Hide</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Sheryl Tom </p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Holston Becker</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Ashley Jean</p>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+<!--------------------------------footer-section-------------------------------------------->
+<div class="footer">
+    <p>Copyright 2021- CodeWithNed Youtube Channel</p>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
